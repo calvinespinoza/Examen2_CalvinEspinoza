@@ -1,11 +1,19 @@
+#pragma once
 #include "Fruta.h"
 #include <string>
 
+using namespace std;
+
 class Paramecia : public Fruta {
 private:
-	/* data */
+	string descripcion;
 
 public:
-	Paramecia : public Fruta (arguments);
-	virtual ~Paramecia : public Fruta ();
+	Paramecia();
+	Paramecia(string, string);
+
+	void setDescripcion(string);
+	string getDescripcion();
+
+	//virtual ~Paramecia ();
 };

@@ -2,8 +2,10 @@
 #include <string>
 #include "Fruta.h"
 
+using namespace std;
+
 class Seres {
-	private:
+	protected:
 		string raza;
 		int edad;
 		string nombre;
@@ -17,6 +19,14 @@ class Seres {
 		Seres(string, int, string, bool, bool, bool);
 		Seres(string, int, string, bool, bool, bool, Fruta*);
 
+		void setRaza(string);
+		void setEdad(int);
+		void setNombre(string);
+		void setHakiObservacion(bool);
+		void setHakiArmadura(bool);
+		void setHakiRey(bool);
+		void setFruta(Fruta*);
+
 		string getRaza();
 		int getEdad();
 		string getNombre();
@@ -25,5 +35,5 @@ class Seres {
 		bool getHakiRey();
 		Fruta* getFruta();
 
-		virtual ~Seres ();
+		//virtual ~Seres ();
 };

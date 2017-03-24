@@ -1,15 +1,18 @@
 #pragma once
 #include <string>
 
+using namespace std;
+
 class Fruta {
-	private:
+	protected:
 		string nombre;
 
 	public:
 		Fruta();
 		Fruta(string);
 
+		void setNombre(string);
 		string getNombre();
 
-		virtual ~Fruta ();
+		//virtual ~Fruta ();
 };

@@ -45,11 +45,11 @@ int Seres::getEdad() {
 	return this->edad;
 }
 
-void setNombre(string nombre) {
+void  Seres::setNombre(string nombre) {
 	this->nombre = nombre;
 }
 
-string getNombre() {
+string  Seres::getNombre() {
 	return this->nombre;
 }
 
