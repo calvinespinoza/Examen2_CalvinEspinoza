@@ -418,14 +418,6 @@ int main()
 
 					Seres* ser = new Revolucionarios(raza, edad, nombre, hObs, hArm, hRey, fecha);
 
-					if(fruit == "Y" || fruit == "y")
-					{
-						imprimirFrutas(frutas);
-						cout << "Eliga su opcion:" << endl;
-						cin >> opcFruta;
-						ser -> setFruta(frutas[opcFruta-1]);
-						frutas.erase(frutas.begin()+opcFruta-1);
-					}
 					seres.push_back(ser);
 					info << "\t\t\t" << nombre << endl;
 					for (int i = 0; i < nombre.size(); i++) {
