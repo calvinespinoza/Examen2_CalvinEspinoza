@@ -31,6 +31,16 @@ Seres::Seres(string pRaza, int pEdad, string pNombre, bool pHakiObservacion, boo
 	fruta = pFruta;
 }
 
+void Seres::setFruta(Fruta* pFruta)
+{
+	fruta = pFruta;
+}
+
+Fruta* Seres::getFruta()
+{
+	return fruta;
+}
+
 void Seres::setRaza(string raza) {
 	this->raza = raza;
 }
